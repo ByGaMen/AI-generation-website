@@ -33,7 +33,7 @@ const fetchAiImages = async (userPrompt, userModelOfAi) => {
         const response = await fetch(
             `https://api-inference.huggingface.co/models/${modelURL}`,
             {
-                headers: { Authorization: "Bearer ?" },
+                headers: { Authorization: "Bearer //apiKey//" },
                 method: "POST",
                 body: JSON.stringify(userPrompt),
             }
