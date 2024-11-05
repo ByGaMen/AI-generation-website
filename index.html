@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AImage Gen</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="image-generator">
+        <div class="conten">
+            <h1>AI Image Generator</h1>
+            <p>Convert your text into an image within a second using this JavaScript-powered AI image Generator Tool</p>
+            <form action="#" class="generate-form" id="main-form">
+                <input type="text" class="propmp-input" placeholder="Describe what you want to see"
+                    value="cat with dog face" required>
+                <div class="controls">
+                    <select name="quantity" class="img-quantitity" form="main-form">
+                        <option value="1" selected>1 Image</option>
+                        <option value="2">2 Images</option>
+                        <option value="3">3 Images</option>
+                        <option value="4">4 Images</option>
+                    </select>
+                    <select name="ai-model" class="img-ai-model-selector" form="main-form">
+                        <option value="runwayml/stable-diffusion-v1-5" selected>Stable diffusion v1-5</option>
+                        <option value="stabilityai/stable-diffusion-xl-base-1.0">Stable diffusion xL</option>
+                        <option value="stabilityai/stable-diffusion-2-1">Stable diffusion 2.1</option>
+                        <option value="cagliostrolab/animagine-xl-3.0">Animagine xL</option>
+                        <option value="Lykon/dreamshaper-xl-v2-turbo">Dreamshaper xL</option>
+                    </select>
+                    <button class="generate-btn">Generate</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="image-gallery">
+        <div class="img-card">
+            <img src="images/img-1.jpg" alt="image">
+            <a href="#" class="download-btn">
+                <img src="images/download.svg" alt="download icon">
+            </a>
+        </div>
+        <div class="img-card">
+            <img src="images/img-2.jpg" alt="image">
+            <a href="#" class="download-btn">
+                <img src="images/download.svg" alt="download icon">
+            </a>
+        </div>
+        <div class="img-card">
+            <img src="images/img-3.jpg" alt="image">
+            <a href="#" class="download-btn">
+                <img src="images/download.svg" alt="download icon">
+            </a>
+        </div>
+        <div class="img-card">
+            <img src="images/img-4.jpg" alt="image">
+            <a href="#" class="download-btn">
+                <img src="images/download.svg" alt="download icon">
+            </a>
+        </div>
+    </section>
+    <script src="index.js" defer></script>
+</body>
+
+</html>
